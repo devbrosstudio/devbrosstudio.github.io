@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
-  font-family: 'Audiowide', cursive;
+}
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
   background-color: #0b0d14;
   color: white;
   line-height: 1.6;
@@ -22,13 +24,16 @@ body {
   padding: 10px 20px;
   background-color: #0b0d14;
 }
-
+.navbar {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* optional spacing */
+}
 .logo {
   font-size: 1.2rem;
   font-weight: bold;
   color: #00ffff;
 }
-
 /* Mobile Menu Button (Hamburger Icon) */
 .menu-toggle {
   display: none; /* Hidden by default on larger screens */
@@ -69,7 +74,7 @@ nav a i {
 }
 
 nav a:hover {
-  color: #ff3c7f;
+  color: #00aeff;
 }
 
 /* Hero Section */
@@ -90,8 +95,8 @@ nav a:hover {
   font-size: 2.2rem;
   margin-bottom: 15px;
   font-weight: 800;
-  color: #ff70b0;
-  text-shadow: 0 0 3px #ff00c3;
+  color: #00aeff;
+  text-shadow: 0 0 3px #8c00ff;
 }
 
 .hero-text p {
@@ -137,8 +142,8 @@ section {
 .featured-game h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #ff70b0;
-  text-shadow: 0 0 3px #ff00c3;
+  color: #ffffff;
+  text-shadow: 0 0 3px #00aeff;
 }
 
 .game-container {
@@ -156,7 +161,7 @@ section {
   height: 30vh;
   max-height: 500px;
   border-radius: 10px;
-  box-shadow: 0 0 15px #ff3c7f;
+  box-shadow: 0 0 15px #00aeff;
 }
 
 .game-info {
@@ -170,7 +175,7 @@ section {
 }
 
 .game-info .highlight {
-  color: #ff3c7f;
+  color: #00aeff;
 }
 
 .game-info p {
@@ -180,7 +185,7 @@ section {
 }
 
 .status-tag {
-  background-color: #ff3c7f;
+  background-color: #00aeff;
   color: #fff;
   padding: 6px 14px;
   border-radius: 5px;
@@ -197,12 +202,11 @@ section {
   top: 10px;
   right: 10px;
 
-  font-family: 'Orbitron', sans-serif;
   font-size: 14px;
   padding: 6px 12px;
   background-color: #1f1f1f;
-  color:  #ff3c7f;
-  border: 1px solid  #ff3c7f;
+  color:  #00aeff;
+  border: 1px solid  #00aeff;
   border-radius: 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -226,8 +230,8 @@ section {
 
 .team-section h2 {
   font-size: 2rem;
-  color: #ff70b0;
-  text-shadow: 0 0 3px #ff00c3;
+  color: #00aeff;
+  text-shadow: 0 0 3px #00aeff;
   margin-bottom: 30px;
 }
 
@@ -257,9 +261,9 @@ section {
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #ff3cdb;
+  border: 3px solid #00aeff;
   margin-bottom: 15px;
-  box-shadow: 0 0 10px #ff3cc8;
+  box-shadow: 0 0 10px #00aeff;
 }
 
 .team-member h3 {
@@ -305,13 +309,13 @@ section {
 
 .vision-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 60, 127, 0.3);
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.3);
 }
 
 .vision-card h3 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #ff3c7f;
+  color: #00aeff;
 }
 
 .vision-card p {
@@ -325,7 +329,7 @@ section {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #ff3c7f;
+  background-color: #00aeff;
   color: white;
   padding: 8px 14px;
   font-size: 16px;
@@ -399,7 +403,7 @@ section {
 }
 
 .footer-social a:hover {
-  color: #ff3c7f;
+  color: #00aeff;
   transform: scale(1.2);
 }
 
@@ -429,7 +433,7 @@ section {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #ff70b0;
+  color: #00aeff;
   text-shadow: 0 0 3px #ff00c3;
 }
 
@@ -476,15 +480,21 @@ section {
 /* General Styles */
 .section-title {
   font-size: 2rem;
-  color: #ff70b0;
+  color: #00aeff;
   text-shadow: 0 0 3px #ff00c3;
   text-align: center;
   margin-bottom: 30px;
 }
 
 /* Media Queries for Responsiveness */
+.logo img {
+  height: 40px;
+  max-width: 100%;
+  object-fit: contain;
+}
 
-/* Small screens (phones) */
 @media (max-width: 576px) {
-
+  .logo img {
+    height: 30px;
+  }
 }
