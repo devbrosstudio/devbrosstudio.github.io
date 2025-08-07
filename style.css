@@ -24,11 +24,7 @@ body {
   padding: 10px 20px;
   background-color: #0b0d14;
 }
-.navbar {
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; /* optional spacing */
-}
+
 .logo {
   font-size: 1.2rem;
   font-weight: bold;
@@ -494,6 +490,13 @@ section {
 }
 
 @media (max-width: 576px) {
+  
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
   .logo img {
     height: 30px;
   }
